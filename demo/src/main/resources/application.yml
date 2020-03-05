@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url0: "https://localhost:4200/api"
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: false
+    generate-ddl: true
+    show-sql: true
