@@ -1,0 +1,30 @@
+<div>
+  Simple Form :)
+
+  <br/>
+  <br/>
+
+  <form [formGroup]="angForm" (ngSubmit)="onSubmit(
+  angForm.get('person_name').value, $event)" > 
+      <div class="form-group">
+        <label>InputBox</label>
+        <input  type="text" formControlName="person_name">
+      </div>
+  </form>
+  <div> 
+    Value: {{angForm.get('person_name').value}}
+  </div>  
+  
+  <br>
+  
+  <!-- <div>
+    <label>
+      Age:
+      <input type="text" [formControl]="age">
+    </label>
+  </div>
+  <div> 
+    Value: {{age.value}}
+  </div> -->
+
+</div>
